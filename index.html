@@ -1,19 +1,25 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>学校</title>
+<meta charset="utf-8">
+<title>JavaScriptによる閲覧制限</title>
+<script type="text/javascript">
+   function gate() {
+      var UserInput = prompt("パスワードを入力して下さい:","");
+   
+if(UserInput=="asterisk2525jp"){
+window.open('','_blank')
+window.close();
+}else {
+alert('パスワードが間違っています!');
+gate();
+}
+}
+window.addEventListener('load', gate());
+
+
+</script>
 </head>
 <body>
-    <h1>ウォロ</h1>
-    <audio id="audio" src = 'music1.mp3' controls loop></audio>
-    <script>
-let m = document.getElementById('audio');
-m.volume = .2;
-
-
-    </script>
-<body>
+</body>
 </html>
